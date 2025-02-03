@@ -11,12 +11,12 @@
         <form novalidate id="form">
             <label for="email" class="email label">
                 E-mail:
-                <input type="email" id="email" name="email" />
+                <input type="email" id="email" name="email" class="input" />
                 <span class="error" aria-live="polite"></span>
             </label>
             <label for="country" class="country label">
                 Country:
-                <select name="country" id="country">
+                <select name="country" id="country" class="input">
                     <option value="-" class="country-option" selected disabled>
                         -
                     </option>
@@ -31,11 +31,12 @@
             </label>
             <label for="zip-code" class="zip-code label">
                 Zip Code:
-                <input type="text" id="zip-code" name="zip-code" />
+                <input type="text" id="zip-code" name="zip-code" class="input" />
             </label>
             <label for="password" class="password label">
                 Password:
-                <input type="password" id="password" name="password" />
+                <input type="password" id="password" name="password" class="input" />
+                <span class="error" aria-live="polite"></span>
             </label>
         </form>
     </body>
