@@ -88,6 +88,12 @@ body {
     width: 168px;
 }
 
+.input:invalid,
+.input:invalid:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
 #country {
     width: 168px;
     height: 30px;
