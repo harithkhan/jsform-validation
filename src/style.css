@@ -110,3 +110,23 @@ body {
 .active {
     padding: 0.3rem;
 }
+
+.submit-button {
+  cursor: pointer;
+}
+
+.dialog {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 20px;
+  position: fixed; 
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  place-items: center;
+}
+
+.dialog-text {
+  font-size: 10rem;
+  margin-top: 9rem;
+}

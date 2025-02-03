@@ -9,3 +9,11 @@ attachCountryEventListener();
 attachZipEventListeners();
 attachPasswordEventListener();
 attachConfirmPassEventListener();
+
+const form = document.getElementById("form");
+form.addEventListener("submit", () => {
+    const dialog = document.querySelector(".dialog");
+    if (form.checkValidity()) {
+        dialog.showModal();
+    }
+})
