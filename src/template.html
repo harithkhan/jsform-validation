@@ -11,12 +11,18 @@
         <form novalidate id="form" autocomplete="off">
             <label for="email" class="email label">
                 E-mail:
-                <input type="email" id="email" name="email" class="input" />
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="input"
+                    required
+                />
                 <span class="error" aria-live="polite"></span>
             </label>
             <label for="country" class="country label">
                 Country:
-                <select name="country" id="country" class="input">
+                <select name="country" id="country" class="input" required>
                     <option value="-" class="country-option" selected disabled>
                         -
                     </option>
@@ -36,6 +42,7 @@
                     id="zip-code"
                     name="zip-code"
                     class="input"
+                    required
                 />
             </label>
             <label for="password" class="password label">
@@ -45,6 +52,18 @@
                     id="password"
                     name="password"
                     class="input"
+                    required
+                />
+                <span class="error" aria-live="polite"></span>
+            </label>
+            <label for="confirm-password" class="confirm-password label">
+                Password:
+                <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    class="input"
+                    required
                 />
                 <span class="error" aria-live="polite"></span>
             </label>
