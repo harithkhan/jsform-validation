@@ -19,4 +19,12 @@ export function attachCountryEventListener() {
             showCountryError();
         }
     });
+    countryInput.addEventListener("input", () => {
+        if (countryInput.value !== "-") {
+            countryError.textContent = "";
+            countryError.className = "error";
+        } else {
+            showCountryError();
+        }
+    })
 }
