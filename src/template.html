@@ -53,12 +53,14 @@
                     id="password"
                     name="password"
                     class="input"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                    title="Password must be at least 8 characters long and include at least one letter and one number."
                     required
                 />
                 <span class="error" aria-live="polite"></span>
             </label>
             <label for="confirm-password" class="confirm-password label">
-                Password:
+                Confirm Password:
                 <input
                     type="password"
                     id="confirm-password"
