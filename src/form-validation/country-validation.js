@@ -18,5 +18,5 @@ export function attachCountryEventListener() {
             event.preventDefault();
             showCountryError();
         }
-    })
+    });
 }
