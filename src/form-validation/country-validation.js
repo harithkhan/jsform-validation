@@ -26,5 +26,5 @@ export function attachCountryEventListener() {
         } else {
             showCountryError();
         }
-    })
+    });
 }
